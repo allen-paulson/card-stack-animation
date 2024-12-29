@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --gutter-x: 2rem;
+}
+
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     --background: #0a0a0a;
+//     --foreground: #ededed;
+//   }
+// }
+
+@layer components {
+  .container {
+    @apply sm:max-w-[540px] md:max-w-[720px] 
+    lg:max-w-[960px] xl:max-w-[1080px] 
+    xxl:max-w-[1260px] xxxl:max-w-[1480px];
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
